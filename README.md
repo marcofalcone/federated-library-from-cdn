@@ -12,11 +12,11 @@ npm i
 ```
 npm run dev
 ```
-### Create library federation bundle (remoteEntry.js), deploy this file on your cdn of choice
+### Create library federation bundle (remoteEntry.js), deploy the dist folder on your CDN of choice
 ```
 npm run build
 ```
-### Insert library bundle endpoint into the REMOTE_URL env variable and serve the two apps to see the fedarated component from the cdn
+### Insert library bundle endpoint "http//yourendpoint/remoteEntry.js" into the REMOTE_URL env variable and serve the two apps to see the fedarated component from the cdn
 ```
 npm run start
 ```
