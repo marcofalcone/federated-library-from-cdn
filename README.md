@@ -1,7 +1,7 @@
 # federated-library-from-cdn
 ![Screenshot_2023-08-29_13-57-10](https://github.com/marcofalcone/federated-library-from-cdn/assets/61291681/6347c456-3034-478a-8a88-ca3c1713f24e)
 
-## Basic example where two applications share the same library served from a CDN.
+## Basic example of two applications that share the same library served from a CDN.
 
 ## Usage
 ### Install packages 
