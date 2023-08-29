@@ -7,6 +7,7 @@ const App = () => {
       <h1 className="mb-36 mt-10 text-5xl text-white">Application - 1</h1>
         <React.Suspense fallback="Loading...">
             <RemoteButton />
+            <RemoteButton />
         </React.Suspense>
     </div>)
 }
