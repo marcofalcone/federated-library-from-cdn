@@ -1,3 +1,5 @@
+const { ModuleFederationPlugin } = require('webpack').container;
+
 module.exports = {
   target: ['web', 'es5'],
   resolve: {
@@ -24,4 +26,13 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new ModuleFederationPlugin({
+      name: 'remoteLibrary',
+      filename: 'remoteEntry.js',
+      exposes: {
+        './Button': './src/button.jsx',
+      },
+    }),
+  ],
 };

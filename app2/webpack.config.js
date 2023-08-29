@@ -6,7 +6,6 @@ require('dotenv').config({ path: './.env' });
 const remoteUrl = process.env.REMOTE_URL
 
 module.exports = {
-  entry: "./src/index",
   mode: "development",
   devServer: {
     port: 3001,
@@ -28,7 +27,7 @@ module.exports = {
         loader: "babel-loader",
         exclude: /node_modules/,
         options: {
-          presets: ["@babel/preset-react"],
+          presets: ["@babel/preset-react", "@babel/preset-env"],
         },
       },
       {
@@ -44,9 +43,8 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "app2",
       remotes: {
-        remoteLibrary: `remoteLibrary@${remoteUrl}/remoteEntry.js`,
+        remoteLibrary: `remoteLibrary@${remoteUrl}`,
       },
-      shared: {react: {singleton: true}, "react-dom": {singleton: true}},
     }),
     new webpack.DefinePlugin({
       "process.env": JSON.stringify(process.env),
