@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const {ModuleFederationPlugin} = require("webpack").container;
 require('dotenv').config({ path: './.env' }); 
 
-const remoteUrl = "https://federated-library.pages.dev/remoteEntry.js"
+const remoteUrl = "https://b7d706f9.federated-library-from-cdn.pages.dev/remoteEntry.js"
 
 module.exports = {
   mode: "development",
