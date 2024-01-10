@@ -26,3 +26,4 @@ npm run build
 ```
 npm run start
 ```
+This project is part of the official module-federation-examples repo from Webpack - https://github.com/module-federation/module-federation-examples
