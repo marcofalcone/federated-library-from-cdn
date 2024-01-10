@@ -1,7 +1,7 @@
 # federated-library-from-cdn
 ![264034144-6347c456-3034-478a-8a88-ca3c1713f24e](https://github.com/marcofalcone/federated-library-from-cdn/assets/61291681/f1222e71-d405-4e1d-86f7-f72fb4485fdf)
 
-## Basic example of two applications that share the same library served from a CDN.
+## Basic example of two applications that share the same library served from a CDN using Webpack's module federation.
 
 ## Usage
 ### Install packages 
